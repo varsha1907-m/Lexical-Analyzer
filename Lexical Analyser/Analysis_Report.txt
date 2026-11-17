@@ -1,0 +1,28 @@
+SMART C LEXICAL ANALYZER - TOKEN REPORT
+================================================================================
+LINE     | LEXEME                                   | TOKEN CATEGORY              
+--------------------------------------------------------------------------------
+1        | #include <stdio.h>                       | PREPROCESSOR_DIRECTIVE      
+3        | int                                      | KEYWORD                     
+3        | main                                     | IDENTIFIER                  
+3        | (                                        | OPEN_DELIMITER              
+3        | )                                        | CLOSE_DELIMITER             
+4        | {                                        | OPEN_DELIMITER              
+5        | char                                     | KEYWORD                     
+5        | *                                        | OPERATOR                    
+5        | name                                     | IDENTIFIER                  
+5        | =                                        | OPERATOR                    
+5        | "Varsha;                                | INVALID_STRING              
+6        | char                                     | KEYWORD                     
+6        | ch                                       | IDENTIFIER                  
+6        | =                                        | OPERATOR                    
+6        | 'A;                                     | INVALID_CHARACTER           
+8        | return                                   | KEYWORD                     
+8        | 0                                        | INTEGER_CONSTANT            
+8        | ;                                        | STATEMENT_TERMINATOR        
+9        | }                                        | CLOSE_DELIMITER             
+
+================================================================================
+Total tokens : 19
+Total errors : 2
+================================================================================

@@ -1,0 +1,104 @@
+SMART C LEXICAL ANALYZER - TOKEN REPORT
+================================================================================
+LINE     | LEXEME                                   | TOKEN CATEGORY              
+--------------------------------------------------------------------------------
+2        | #include <stdio.h>                       | PREPROCESSOR_DIRECTIVE      
+4        | // Testing different tokens              | SINGLE_LINE_COMMENT         
+5        | int                                      | KEYWORD                     
+5        | main                                     | IDENTIFIER                  
+5        | (                                        | OPEN_DELIMITER              
+5        | )                                        | CLOSE_DELIMITER             
+6        | {                                        | OPEN_DELIMITER              
+7        | int                                      | KEYWORD                     
+7        | a                                        | IDENTIFIER                  
+7        | =                                        | OPERATOR                    
+7        | 10                                       | INTEGER_CONSTANT            
+7        | ,                                        | SEPARATOR                   
+7        | b                                        | IDENTIFIER                  
+7        | =                                        | OPERATOR                    
+7        | 20                                       | INTEGER_CONSTANT            
+7        | ;                                        | STATEMENT_TERMINATOR        
+8        | float                                    | KEYWORD                     
+8        | result                                   | IDENTIFIER                  
+8        | =                                        | OPERATOR                    
+8        | 25.5                                     | FLOAT_CONSTANT              
+8        | ;                                        | STATEMENT_TERMINATOR        
+10       | char                                     | KEYWORD                     
+10       | ch                                       | IDENTIFIER                  
+10       | =                                        | OPERATOR                    
+10       | 'A'                                      | CHARACTER_LITERAL           
+10       | ;                                        | STATEMENT_TERMINATOR        
+11       | char                                     | KEYWORD                     
+11       | name                                     | IDENTIFIER                  
+11       | [                                        | OPEN_DELIMITER              
+11       | ]                                        | CLOSE_DELIMITER             
+11       | =                                        | OPERATOR                    
+11       | "Varsha"                                 | STRING_LITERAL              
+11       | ;                                        | STATEMENT_TERMINATOR        
+13       | if                                       | KEYWORD                     
+13       | (                                        | OPEN_DELIMITER              
+13       | a                                        | IDENTIFIER                  
+13       | <                                        | OPERATOR                    
+13       | b                                        | IDENTIFIER                  
+13       | &&                                       | COMPOUND_OPERATOR           
+13       | b                                        | IDENTIFIER                  
+13       | !=                                       | COMPOUND_OPERATOR           
+13       | 0                                        | INTEGER_CONSTANT            
+13       | )                                        | CLOSE_DELIMITER             
+14       | {                                        | OPEN_DELIMITER              
+15       | result                                   | IDENTIFIER                  
+15       | +=                                       | COMPOUND_OPERATOR           
+15       | a                                        | IDENTIFIER                  
+15       | +                                        | OPERATOR                    
+15       | b                                        | IDENTIFIER                  
+15       | ;                                        | STATEMENT_TERMINATOR        
+16       | printf                                   | IDENTIFIER                  
+16       | (                                        | OPEN_DELIMITER              
+16       | "Name: %s\n"                             | STRING_LITERAL              
+16       | ,                                        | SEPARATOR                   
+16       | name                                     | IDENTIFIER                  
+16       | )                                        | CLOSE_DELIMITER             
+16       | ;                                        | STATEMENT_TERMINATOR        
+17       | }                                        | CLOSE_DELIMITER             
+18       | else                                     | KEYWORD                     
+19       | {                                        | OPEN_DELIMITER              
+20       | printf                                   | IDENTIFIER                  
+20       | (                                        | OPEN_DELIMITER              
+20       | "Invalid\n"                              | STRING_LITERAL              
+20       | )                                        | CLOSE_DELIMITER             
+20       | ;                                        | STATEMENT_TERMINATOR        
+21       | }                                        | CLOSE_DELIMITER             
+23       | /* Multi-line
+       comment */          | MULTI_LINE_COMMENT          
+26       | for                                      | KEYWORD                     
+26       | (                                        | OPEN_DELIMITER              
+26       | int                                      | KEYWORD                     
+26       | i                                        | IDENTIFIER                  
+26       | =                                        | OPERATOR                    
+26       | 0                                        | INTEGER_CONSTANT            
+26       | ;                                        | STATEMENT_TERMINATOR        
+26       | i                                        | IDENTIFIER                  
+26       | <                                        | OPERATOR                    
+26       | 5                                        | INTEGER_CONSTANT            
+26       | ;                                        | STATEMENT_TERMINATOR        
+26       | i                                        | IDENTIFIER                  
+26       | ++                                       | COMPOUND_OPERATOR           
+26       | )                                        | CLOSE_DELIMITER             
+27       | {                                        | OPEN_DELIMITER              
+28       | printf                                   | IDENTIFIER                  
+28       | (                                        | OPEN_DELIMITER              
+28       | "%d "                                    | STRING_LITERAL              
+28       | ,                                        | SEPARATOR                   
+28       | i                                        | IDENTIFIER                  
+28       | )                                        | CLOSE_DELIMITER             
+28       | ;                                        | STATEMENT_TERMINATOR        
+29       | }                                        | CLOSE_DELIMITER             
+31       | return                                   | KEYWORD                     
+31       | 0                                        | INTEGER_CONSTANT            
+31       | ;                                        | STATEMENT_TERMINATOR        
+32       | }                                        | CLOSE_DELIMITER             
+
+================================================================================
+Total tokens : 94
+Total errors : 0
+================================================================================
